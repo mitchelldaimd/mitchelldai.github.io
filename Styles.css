@@ -1,0 +1,595 @@
+/* Base Styles & CSS Variables */
+:root {
+  --primary-color: #002b49;    /* Deep navy blue */
+  --secondary-color: #0077c8;  /* Vibrant engineering blue */
+  --text-color: #333333;       /* Charcoal body text */
+  --bg-light: #f8f9fa;         /* Light grey background */
+  --bg-white: #ffffff;
+  --border-color: #e0e0e0;
+  --placeholder-color: #888888;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-white);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 3px solid var(--secondary-color);
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.nav-logo {
+  color: var(--bg-white);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: var(--bg-white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #a0cbe8;
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--bg-light);
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero h2 {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  border: none;
+  margin-bottom: 15px;
+}
+
+.hero-intro {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--bg-white);
+}
+
+.btn-secondary {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+}
+
+.bg-light {
+  background-color: var(--bg-light);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* Project Cards & Structures */
+.project-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.project-tag {
+  background-color: #e3f2fd;
+  color: var(--secondary-color);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.project-block {
+  margin-bottom: 20px;
+}
+
+.project-block h4 {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Placeholders & Visual Boxes */
+.placeholder-text {
+  color: var(--placeholder-color);
+  font-style: italic;
+  border-left: 3px solid var(--border-color);
+  padding-left: 10px;
+}
+
+.visual-placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.image-box {
+  background-color: #eef2f5;
+  border: 2px dashed #b0bec5;
+  color: var(--placeholder-color);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Contact Links & Footer */
+.contact-links a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Align Hero Section Content Side-by-Side */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pushes text to the left and image to the right */
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1; /* Allows text section to fill available space smoothly */
+  text-align: left;
+}
+
+/* Adjust Image Size & Position */
+.hero-profile-img {
+  width: 220px; /* Slightly larger display size */
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--secondary-color, #0077c8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0; /* Prevents image from shrinking when browser resizes */
+}
+
+/* Skill Card Bullet List Styling */
+.skill-list {
+  list-style-type: disc;
+  padding-left: 20px; /* Indents bullets inside the card */
+  margin-top: 10px;
+}
+
+.skill-list li {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  margin-bottom: 6px; /* Spacing between bullet items */
+}
+
+
+/* Project Media Section Container */
+.project-media {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between the main image and the grid */
+  margin-top: 20px;
+}
+
+/* Featured Main CAD View */
+.main-cad-view {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.main-cad-view img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* Ensures the whole assembly is visible */
+}
+
+.main-cad-view .caption {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+/* 3-Column Detail Sub-Grid */
+.cad-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  gap: 12px; /* Space between the detail cards */
+}
+
+.detail-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+}
+
+.detail-card img {
+  width: 100%;
+  height: 150px; /* Adjust height as needed to show your models clearly */
+  object-fit: contain; /* Ensures the entire component model fits without being cut off */
+  padding: 10px; /* Adds space around the model */
+  display: block;
+}
+
+.detail-card span {
+  display: block;
+  padding: 8px 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #333;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive adjustment for small screens (e.g., phones) */
+@media (max-width: 600px) {
+  .cad-detail-grid {
+    grid-template-columns: 1fr; /* Stacks the three cards vertically */
+  }
+}
+
+/* Table Container for Mobile Scrolling */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+/* Comparison Table Styling */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.comparison-table th {
+  background-color: #f4f6f8;
+  color: #222222;
+  font-weight: 600;
+  padding: 10px 12px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.comparison-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eeeeee;
+  vertical-align: top;
+  color: #444444;
+  line-height: 1.4;
+}
+
+.comparison-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Header Tags Layout */
+.header-tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Status Badge */
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-in-progress {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+/* Expandable Details Tab Styling */
+.project-details-tab {
+  margin-top: 15px;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 15px;
+}
+
+/* Remove default browser arrow on <summary> */
+.project-details-tab summary::-webkit-details-marker {
+  display: none;
+}
+
+.details-summary-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  color: var(--secondary-color);
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.details-summary-btn:hover {
+  background-color: #e3f2fd;
+  color: var(--primary-color);
+}
+
+.details-summary-btn .chevron {
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+/* Rotate chevron when open */
+.project-details-tab[open] .details-summary-btn .chevron {
+  transform: rotate(180deg);
+}
+
+/* Container for hidden content */
+.details-expanded-content {
+  padding-top: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5deg); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Two-Column Side-by-Side Image Grid for Projects in Progress */
+.two-column-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Adjust height for 2-column detail images */
+.two-column-grid .detail-card img {
+  height: 200px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .two-column-grid {
+    grid-template-columns: 1fr; /* Stacks vertically on mobile screens */
+  }
+}
+
+/* Make detail images in CAD grids larger */
+.cad-detail-grid .detail-card img,
+.two-column-grid .detail-card img {
+  height: 260px; /* Increased from 180px/200px for larger visuals */
+  width: 100%;
+  object-fit: contain; /* Or 'cover' depending on your preference */
+}
+
+/* Adjust card containers to accommodate larger images */
+.cad-detail-grid,
+.two-column-grid {
+  gap: 16px; /* Increases spacing slightly between cards */
+  margin-top: 15px;
+}
+
+/* Lightbox Modal Background */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  cursor: zoom-out;
+}
+
+/* Expanded Lightbox Image */
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.25s ease-out;
+}
+
+/* Caption Text */
+#lightbox-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ffffff;
+  padding: 12px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Close Button */
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+  color: var(--primary-color, #0066cc);
+}
+
+/* Pointer Cursor on Portfolio Images */
+.project-media img,
+.detail-card img,
+.banner-img-box img {
+  cursor: zoom-in;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project-media img:hover,
+.detail-card img:hover,
+.banner-img-box img:hover {
+  opacity: 0.92;
+}
+
+/* Zoom Animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

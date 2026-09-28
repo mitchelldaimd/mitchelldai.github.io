@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitchell Dai | Mechanical Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Mitchell Dai</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-container">
+      
+      <!-- Text on the Left -->
+      <div class="hero-text">
+        <h1>Mitchell Dai</h1>
+        <h2>Mechanical Engineering Student | McGill University</h2>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- Profile Image on the Right -->
+      <img src="images/profile image.jpg" alt="Mitchell Dai Profile Picture" class="hero-profile-img">
+
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Personal Introduction</h2>
+      <p>
+        Welcome! I am an incoming U2 Mechanical Engineering student at McGill University with a strong academic track record with practical design experience. I am deeply passionate about automotive design, manufacturing processes, and energy systems. 
+        Scroll below to see my recent works!
+      </p>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <p class="section-subtitle">Summary of core proficiencies and technical capabilities.</p>
+      
+      <div class="skills-grid">
+        <!-- Category 1 -->
+        <div class="skill-card">
+          <h3>CAD & 3D Modeling</h3>
+          <ul class="skill-list">
+            <li>Siemens NX</li>
+            <li>SolidWorks Design</li>
+          </ul>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-card">
+          <h3>Manufacturing & Analysis</h3>
+          <ul class="skill-list">
+            <li>2D/3D DXF Technical Drawings</li>
+            <li>FEA</li>
+          </ul>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-card">
+          <h3>Tools & Technical Writing</h3>
+          <ul class="skill-list">
+            <li>Python (NumPy, SciPy, Matplotlib, Pandas)</li>
+            <li>Excel</li>
+            <li>Quality Testing & Validation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Projects Section -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Engineering Projects</h2>
+    <p class="section-subtitle">A detailed breakdown of technical design and engineering work.</p>
+
+    <!-- Project 1: Baja Brake Subsystem -->
+    <article class="project-card">
+      <header class="project-header">
+        <h3>Brakes Subsystem CAD Assembly</h3>
+        <span class="project-tag">Brakes Subsystem Lead</span>
+      </header>
+
+      <div class="project-content">
+        <!-- Visual Preview First -->
+        <div class="project-block">
+          <div class="project-media">
+            <div class="main-cad-view">
+              <img src="images/Brakes ASM.png" alt="Brake System Assembly Model">
+              <div class="caption">Brake System Assembly Model</div>
+            </div>
+            <div class="cad-detail-grid">
+              <div class="detail-card">
+                <img src="images/Brakes caliper.png" alt="Brake Caliper">
+                <span>Brake Caliper</span>
+              </div>
+              <div class="detail-card">
+                <img src="images/Brakes MCs.png" alt="Clevis System of Master Cylinder Assembly">
+                <span>Clevis System of Master Cylinder Assembly</span>
+              </div>
+              <div class="detail-card">
+                <img src="images/Brake rotor.png" alt="Brake Rotor">
+                <span>Brake Rotor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expandable Details Tab -->
+        <details class="project-details-tab">
+          <summary class="details-summary-btn">
+            <span>View Full Project Breakdown & Analysis</span>
+            <span class="chevron">▾</span>
+          </summary>
+
+          <div class="details-expanded-content">
+            <!-- Overview -->
+            <div class="project-block">
+              <h4>Overview</h4>
+              <ul class="project-list">
+                <li>Led the mechanical design, manufacturing, testing, and integration of a hydraulic braking system for McGill Baja Racing team.</li>
+                <li>Using Siemens NX, designed a full assembly model of the brake system, with relevant calipers, master cylinders, and rotors outlined below.</li>
+              </ul>
+            </div>
+
+            <!-- Methodology -->
+            <div class="project-block">
+              <h4>Methodology</h4>
+              <ul class="project-list">
+                <li>Collaborated with Chassis, Suspension, Steering, and Pedals leads to establish points, clearances, ratios, and obstacles in Siemens NX.</li>
+                <li>Hand measured existing physical components, such as brake lines, brake pads, and pressure sensors using calipers and gauges to construct accurate models from scratch.</li>
+                <li>Used previous CAD models from former leads to form one fully integrated assembly model.</li>
+              </ul>
+            </div>
+
+            <!-- Results & Impact -->
+            <div class="project-block">
+              <h4>Results & Impact</h4>
+              <ul class="project-list">
+                <li>Achieved dynamic brake pass at Baja SAE technical inspection.</li>
+                <li>Increased drifting radius and braking efficiency by shifting proportioning valve bias to the back wheels.</li>
+                <li>Reduced total subsystem mass by optimizing weight distribution in brake rotors without compromising performance.</li>
+                <li>Delivered zero hydraulic failures across dynamic testing and multi-hour endurance race conditions.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <!-- Project 2: Carbon Capture Research Paper -->
+    <article class="project-card">
+      <header class="project-header">
+        <h3>Analysis of Industrial Carbon Capture Technologies</h3>
+        <span class="project-tag">Systems Analysis & Technical Writing</span>
+      </header>
+
+      <div class="project-content">
+        <!-- Visual Table Preview First -->
+        <div class="project-block">
+          <h4>Technology Comparison Table</h4>
+          <div class="table-container">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Evaluation Metric</th>
+                  <th>Oxyfuel Combustion</th>
+                  <th>Underground Coal Gasification (UCG)</th>
+                  <th>Direct Air Capture (DAC)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Economic Feasibility</strong></td>
+                  <td>High CapEx ($1.664B), but low capture costs ($35/tCO₂)</td>
+                  <td>Lower CapEx ($210M–$246M) and capture costs ($27–$28/tCO₂)</td>
+                  <td>Low CapEx ($65M - $125M); High capture ($95–$600/tCO₂) and operational costs ($50–$100/tCO₂)</td>
+                </tr>
+                <tr>
+                  <td><strong>System Efficiency</strong></td>
+                  <td>90% capture rate; 8% drop in net plant efficiency</td>
+                  <td>90% capture rate; 5.6% drop in net plant efficiency</td>
+                  <td>55–75% capture rate (humidity dependent); no plant efficiency penalty</td>
+                </tr>
+                <tr>
+                  <td><strong>Environmental Impact</strong></td>
+                  <td>Low NOₓ/SOₓ emissions using proven industrial technology</td>
+                  <td>Greener than traditional mining; potential groundwater contamination risk</td>
+                  <td>Strong long-term potential; high water consumption demands</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Expandable Details Tab -->
+        <details class="project-details-tab">
+          <summary class="details-summary-btn">
+            <span>View Full Research Summary & Analysis</span>
+            <span class="chevron">▾</span>
+          </summary>
+
+          <div class="details-expanded-content">
+            <!-- Overview -->
+            <div class="project-block">
+              <h4>Overview</h4>
+              <ul class="project-list">
+                <li>Authored a technical evaluation paper for WCOM 206 (Communication in Engineering) that assesses industrial carbon capture and storage methods that mitigate CO₂ emissions.</li>
+                <li>Evaluated three distinct capture methods - Oxyfuel Combustion, Underground Coal Gasification (UCG), and Direct Air Capture (DAC) - to identify the most practical technology for large-scale industrial application.</li>
+              </ul>
+            </div>
+
+            <!-- Methodology -->
+            <div class="project-block">
+              <h4>Methodology & Evaluation Criteria</h4>
+              <ul class="project-list">
+                <li>Evaluated technologies against three core metrics: Economic feasibility, system efficiency, and environmental impact.</li>
+                <li>Performed a comparative analysis of each technology using data from peer-reviewed journals and industry reports to assess their performance and viability.</li>
+              </ul>
+            </div>
+
+            <!-- Results & Impact -->
+            <div class="project-block">
+              <h4>Results & Impact</h4>
+              <ul class="project-list">
+                <li>Oxyfuel combustion represents the most balanced near-term solution for large-scale industrial applications due to high capture efficiency (90%) and low operational capture costs ($35/tCO₂), along with proven widespread usage in existing power plants.</li>
+                <li>UCG is a strong alternative for coal mining, offering strong cost efficiency and lower environmental impact, while DAC holds the greatest long-term potential once cost and efficiency problems are resolved.</li>
+              </ul>
+            </div>
+
+            <!-- Documentation Link -->
+            <div class="project-block">
+              <h4>Documentation</h4>
+              <p style="margin-top: 10px;">
+                <a href="Mitchell Dai - WCOM Research Paper.pdf" target="_blank" class="btn btn-secondary">Read Full Research Paper (PDF)</a>
+              </p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </article>
+
+<!-- Project 3: Baja Handbrake System (In Progress) -->
+      <article class="project-card">
+        <header class="project-header">
+          <h3>Handbrake System</h3>
+          <div class="header-tags">
+            <span class="project-tag">Brakes Subsystem Lead</span>
+            <span class="status-badge status-in-progress">In Progress</span>
+          </div>
+        </header>
+
+        <div class="project-content">
+          <!-- Visuals: Handbrake Renders & Prototypes -->
+          <div class="project-block">
+            <h4>Visuals</h4>
+            <div class="project-media">
+              <div class="two-column-grid">
+                <div class="detail-card">
+                  <img src="images/Handbrake_1.jpeg" alt="Handbrake First Prototype">
+                  <span>Handbrake First Prototype </span>
+                </div>
+                <div class="detail-card">
+                  <img src="images/Handbrake_2.jpeg" alt="Pistons and Mounting Brackets">
+                  <span>Pistons and Mounting Brackets</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expandable Details Tab -->
+          <details class="project-details-tab">
+            <summary class="details-summary-btn">
+              <span>View Full Project Breakdown & Next Steps</span>
+              <span class="chevron">▾</span>
+            </summary>
+
+            <div class="details-expanded-content">
+              <!-- Overview -->
+              <div class="project-block">
+                <h4>Overview</h4>
+                <ul class="project-list">
+                  <li>Leading the research, modeling, and prototype testing of the first handbrake assembly on a McGill Baja SAE vehicle.</li>
+                  <li>Designed to induce a controlled rear-wheel lockup to better simulate drifting, enhancing vehicle agility and sharp cornering during maneuverability events at Baja competitions.</li>
+                </ul>
+              </div>
+
+              <!-- Methodology -->
+              <div class="project-block">
+                <h4>Methodology & Development Phase</h4>
+                <ul class="project-list">
+                  <li>Currently conducting the full design cycle, from functional requirements and concept design through to engineering analysis, manufacturing, and production.</li>
+                  <li>Requires the CAD design of an entirely new system, with its own brake lines, mounts, and calipers.</li>
+                  <li>Created a functional physical prototype to evaluate lever mechanics, driver ergonomics, and mounting bracket feasibility.</li>
+                  <li>Currently modeling the lever geometry and mounting brackets in Siemens NX in coordination with chassis and ergonomics teams.</li>
+                </ul>
+              </div>
+
+              <!-- Next Steps -->
+              <div class="project-block">
+                <h4>Next Steps</h4>
+                <ul class="project-list">
+                  <li>Perform empirical testing of current prototype to evaluate ergonomics and mechanical performance.</li>
+                  <li>Refining and designing lever geometry and mounting brackets based on driver and chassis feedback.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Project 4: Eco-Observation Drone (In Progress) -->
+      <article class="project-card">
+        <header class="project-header">
+          <h3>Wildlife Monitoring Drone</h3>
+          <div class="header-tags">
+            <span class="project-tag">CAD & Product Design</span>
+            <span class="status-badge status-in-progress">In Progress</span>
+          </div>
+        </header>
+
+        <div class="project-content">
+          <!-- Visuals: Drone CAD & Engineering Drawing -->
+          <div class="project-block">
+            <h4>Visuals</h4>
+            <div class="project-media">
+              <div class="two-column-grid">
+                <div class="detail-card">
+                  <img src="images/Drone_CAD.png" alt="SolidWorks 3D Body Model">
+                  <span>SolidWorks 3D Body Model</span>
+                </div>
+                <div class="detail-card">
+                  <img src="images/Drone_Drawing.png" alt="2D Technical Engineering Drawing">
+                  <span>2D Technical Engineering Drawing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expandable Details Tab -->
+          <details class="project-details-tab">
+            <summary class="details-summary-btn">
+              <span>View Full Project Breakdown & Next Steps</span>
+              <span class="chevron">▾</span>
+            </summary>
+
+            <div class="details-expanded-content">
+              <!-- Overview -->
+              <div class="project-block">
+                <h4>Overview</h4>
+                <ul class="project-list">
+                  <li>Designing 4 low-disturbance, autonomous aerial drones for long-range regional wildlife observation as part of my MECH 390 class.</li>
+                  <li>Conducting the complete product development cycle, progressing from functional decomposition to CAD modeling, engineering drawings, and final physical manufacturing.</li>
+                </ul>
+              </div>
+
+              <!-- Methodology -->
+              <div class="project-block">
+                <h4>Methodology & Development Phase</h4>
+                <ul class="project-list">
+                  <li>Modeled the main drone body housing and structural frame in SolidWorks, establishing physical parameters and constraints for subsequent components.</li>
+                  <li>Currently designing assemblies for mounts, rotors, sensors, and other physical hardware.</li>
+                </ul>
+              </div>
+
+              <!-- Next Steps -->
+              <div class="project-block">
+                <h4>Next Steps</h4>
+                <ul class="project-list">
+                  <li>Complete full SolidWorks assembly with all the necessary components for the drones.</li>
+                  <li>Draft 2D technical engineering drawings featuring exploded views, bill of materials, and assembly instructions.</li>
+                  <li>Prototype and test the drone's flight capabilities and sensor functionality in a controlled environment.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container text-center">
+      <h2>Get in Touch</h2>
+      <p>Feel free to reach out for any opportunities or professional inquiries.</p>
+      <div class="contact-links">
+        <p><strong>Email:</strong> <a href="mailto:mitchelldai.md@gmail.com">mitchelldai.md@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mitchell-dai/" target="_blank">https://www.linkedin.com/in/mitchell-dai/</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Mitchell Dai. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Image Zoom / Lightbox Modal -->
+<div id="image-lightbox" class="lightbox-modal" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="Zoomed View">
+  <div id="lightbox-caption"></div>
+</div>
+
+<script>
+  // Attach click listener to all project photos
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".project-media img, .detail-card img, .banner-img-box img");
+    const lightbox = document.getElementById("image-lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxCaption = document.getElementById("lightbox-caption");
+
+    images.forEach((img) => {
+      img.addEventListener("click", function (e) {
+        e.stopPropagation(); // Prevents details accordion toggle when clicking photo
+        lightbox.style.display = "block";
+        lightboxImg.src = this.src;
+        lightboxCaption.innerText = this.alt || "";
+      });
+    });
+  });
+
+  // Close lightbox on click or Escape key
+  function closeLightbox() {
+    document.getElementById("image-lightbox").style.display = "none";
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeLightbox();
+    }
+  });
+</script>
+
+
+</body>
+</html>
